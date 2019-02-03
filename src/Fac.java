@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 /**
  * Created by alice on 03.02.2019.
  */
@@ -22,20 +20,5 @@ public class Fac {
             result = (n * recfac(n - 1));
         }
         return result;
-    }
-
-    public static void main (String [] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("n = ");
-        Integer n = scanner.nextInt();
-
-        if(n<0) {
-            System.out.println(n + "! = calculation of negative factorial not possible" );
-        } else {
-            System.out.println("factorial calculation: ");
-            System.out.println( n + "! = " + fac(n));
-            System.out.println("recursive factorial calculation: ");
-            System.out.println(n + "! = " + recfac(n));
-        }
     }
 }
