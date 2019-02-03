@@ -16,12 +16,10 @@ public class Fac {
         int result = 0;
         if (n == 0) {
             result = 1;
-            return result;
         } else if (n == 1) {
-            return 1;
+            result = 1;
         } else if (n > 1) {
             result = (n * recfac(n - 1));
-            return result;
         }
         return result;
     }
